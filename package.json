@@ -14,5 +14,6 @@
     "nodemon": "^3.1.0",
     "sql": "^0.78.0"
   },
+  "devDependencies": {},
   "description": ""
 }

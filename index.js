@@ -34,8 +34,8 @@ app.get('/mahasiswa/:id', (req,res)=>{
 
 // route post mahasiswa
 app.post('/tb_mahasiswa', (req, res)=>{
-    const {id, nama, npm, jenis_kelamin, tanggal_lahir, alamat}=req.body
-    const sql = `INSERT INTO tb_mahasiswa (id, nama, npm, jenis_kelamin, tanggal_lahir, alamat) values ('${id}','${nama}','${npm}','${jenis_kelamin}','${tanggal_lahir}','${alamat}');`
+    const {id, nama, nim, jenis_kelamin, tanggal_lahir, alamat}=req.body
+    const sql = `INSERT INTO tb_mahasiswa (id, nama, nim, jenis_kelamin, tanggal_lahir, alamat) values ('${id}','${nama}','${nim}','${jenis_kelamin}','${tanggal_lahir}','${alamat}');`
 
     db.query(sql,(error, fields)=>{
         if(error) response(500, 'invalid', `${id} dengan npm ${nama} sudah ditambahkan`, res)
